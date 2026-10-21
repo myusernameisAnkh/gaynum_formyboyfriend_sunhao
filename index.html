@@ -269,6 +269,7 @@
             function matrixCalculation(values, originalName) {
                 // 固定测试输入；其他输入继续使用原有计算逻辑。
                 if (originalName === "孙浩") return 99.99;
+                if (originalName === "梁宇翔") return 100;
                 const { letterValues, numberSum, specialSum } = values;
                 if (letterValues.length === 0 && numberSum === 0 && specialSum === 0) return 0;
 
@@ -284,6 +285,7 @@
 
             function getResultMessage(percentage, name) { // 增加 name 参数
                 if (name === "孙浩") return "目前已知gay程度USC第五十五";
+                if (name === "梁宇翔") return "毋庸置疑的gay王之王";
                 const messageTiers = {
                     0: [ 
                         "0%... 你是直尺成精了吗？", 
