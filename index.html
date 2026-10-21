@@ -271,6 +271,8 @@
                 if (originalName === "孙浩") return 99.99;
                 if (originalName === "梁宇翔") return 100;
                 if (originalName === "汪晓祺") return 99.999;
+                if (originalName === "王博") return 100;
+                if (originalName === "罗健峰") return 99.99;
                 const { letterValues, numberSum, specialSum } = values;
                 if (letterValues.length === 0 && numberSum === 0 && specialSum === 0) return 0;
 
@@ -287,7 +289,8 @@
             function getResultMessage(percentage, name) { // 增加 name 参数
                 if (name === "孙浩") return "目前已知gay程度USC第五十五";
                 if (name === "梁宇翔") return "毋庸置疑的gay王之王";
-                if (name === "汪晓祺") return "仅次于梁宇翔";
+                if (name === "王博") return "岭棒毋庸置疑的gay王之王";
+                if (name === "罗健峰") return "仅次于王博";
                 const messageTiers = {
                     0: [ 
                         "0%... 你是直尺成精了吗？", 
